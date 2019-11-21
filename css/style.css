@@ -10,6 +10,7 @@
 
 :root {
     --line-color: #5cddff;
+    --color-big-text: #1e387c;
 }
 
 * {
@@ -45,6 +46,9 @@ nav.header-nav-main {
     background: linear-gradient(to left, #0d1336, #264a9d);
     color: #fff;
     padding: 0 10rem;
+    position: fixed;
+    z-index: 20;
+    width: 100%;
 }
 
 div.header-logo img {
@@ -85,6 +89,7 @@ div.header-hero-content {
     /* align-items: center; */
     padding: 9rem 9rem;
 }
+
 
 .header-hero-text {
     align-self: flex-start;
@@ -131,13 +136,14 @@ h2 {
     border: 1px solid var(--line-color);
     border-radius: 12rem;
     background: none;
+    cursor: pointer;
 }
 
 
 div.header-hero-img img {
     min-width: auto;
     width: 100%;
-    z-index: 1;
+    /* z-index: 1; */
 
 }
 
@@ -151,5 +157,138 @@ div.header-hero-img img.dots {
     position: absolute;
     top: 3.6rem;
     left: -4rem;
-    z-index: 2;
+    /* z-index: 2; */
+}
+
+section.workflow {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    height: 70rem
+}
+
+div.background-text--gradient h1 {
+    font-size: 21.2rem;
+    text-transform: uppercase;
+    color: var(--color-big-text);
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-top: -10rem;
+    overflow-x: hidden;
+}
+
+div.workflow-content {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    margin-top: -18rem;
+}
+
+div.background-gradient {
+    width: 65rem;
+    height: 35rem;
+    background: linear-gradient(to right, #264a9d, #0d1336);
+    position: relative;
+
+}
+
+div.workflow-img1 {
+    width: 20rem;
+    position: absolute;
+    top: 15rem;
+    left: -12rem;
+    width: 17rem;
+}
+
+div.workflow-img2 {
+    position: absolute;
+    top: 10rem;
+    right: 48rem;
+}
+
+div.workflow-img2 img {
+    width: 25rem;
+}
+
+div.workflow-txt {
+    color: #fff;
+    position: absolute;
+    top: 7rem;
+    left: 15rem;
+}
+
+div.workflow-txt h1 {
+    font-size: 5rem;
+    font-weight: 800;
+}
+
+div.workflow-txt h2 {
+    font-size: 5rem;
+    font-weight: 400;
+}
+
+div.workflow-txt p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--line-color)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+    nav.header-nav-main {
+        padding: 0 3rem;
+    }
+
+    div.header-hero-content {
+        padding: 7rem 3rem;
+    }
+
+
+    .header-hero-text {
+        margin-right: 4rem;
+    }
+
+    .header-hero-text button {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    nav.header-nav-main {
+        padding: 0 1rem;
+    }
+
+    div.header-logo img {
+        width: 12rem;
+    }
+
+    .nav-menu {
+        font-size: 1.4rem;
+        border-bottom: 2px solid #5cddff;
+    }
+
+    nav.header-nav-main button {
+        padding: 2rem 1rem .5rem 1rem;
+        font-size: 1.5rem;
+    }
+
+    div.header-hero-content {
+        padding: 7rem 3rem;
+    }
+
 }
