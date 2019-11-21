@@ -2,11 +2,15 @@
 
 /* Base color */
 /* #13204f footer color */
-/* #1e387c  big text color*/  
+/* #1e387c  big text color*/
 /* #5cddff stroke and line   */
 /* #1d3779 */
 /*  #FFB07E #ff55b1*/
 /* #0d1336 #264a9d */
+
+:root {
+    --line-color: #5cddff;
+}
 
 * {
     margin: 0;
@@ -28,7 +32,124 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 2rem;
-    background-color: #fff;
+    background: linear-gradient(to top right, #264a9d, #0d1336);
     line-height: 2;
     overflow-x: hidden;
+}
+
+nav.header-nav-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
+    background: linear-gradient(to left, #0d1336, #264a9d);
+    color: #fff;
+    padding: 0 10rem;
+}
+
+div.header-logo img {
+    width: 15rem;
+}
+
+.nav-menu {
+    font-size: 1.4rem;
+    border-bottom: 2px solid #5cddff;
+}
+
+div.btn nav-btn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav.header-nav-main button {
+    outline: 0;
+    border: none;
+    padding: 2rem 3rem .5rem 3rem;
+    border-radius: 0 0 .5rem .5rem;
+    background: linear-gradient(to right, #FFB07E, #ff55b1);
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 2.3rem;
+}
+
+header.header-main {
+    height: 100vh;
+    background: linear-gradient(to top right, #264a9d, #0d1336);
+
+}
+
+div.header-hero-content {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding: 9rem 9rem;
+}
+
+.header-hero-text {
+    align-self: flex-start;
+    width: 45%;
+}
+
+.header-hero-text h1,
+h2 {
+    color: #fff;
+    text-transform: capitalize;
+    line-height: 1.5;
+}
+
+.header-hero-text h1 {
+    font-size: 4.5rem;
+}
+
+.header-hero-text h2 {
+    font-weight: 400;
+    font-size: 4.4rem;
+}
+
+.header-hero-text h2 span img {
+    margin-left: -.6rem;
+    width: 1.4rem;
+}
+
+.header-hero-text h3 {
+    font-size: 1.4rem;
+    color: #5cddff;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+
+.header-hero-text button {
+    border: 0;
+    outline: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 1rem 2.2rem;
+    border: 1px solid var(--line-color);
+    border-radius: 12rem;
+    background: none;
+}
+
+
+div.header-hero-img img {
+    min-width: auto;
+    width: 100%;
+    z-index: 1;
+
+}
+
+div.header-hero-img {
+    position: relative;
+    width: 40%;
+}
+
+div.header-hero-img img.dots {
+    width: 20%;
+    position: absolute;
+    top: 3.6rem;
+    left: -4rem;
+    z-index: 2;
 }
