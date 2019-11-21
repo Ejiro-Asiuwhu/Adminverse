@@ -38,6 +38,7 @@ body {
     overflow-x: hidden;
 }
 
+/* Navigation */
 nav.header-nav-main {
     display: flex;
     justify-content: space-between;
@@ -65,6 +66,7 @@ div.btn nav-btn {
     justify-content: flex-end;
 }
 
+/* Header Hero */
 nav.header-nav-main button {
     outline: 0;
     border: none;
@@ -78,8 +80,10 @@ nav.header-nav-main button {
 }
 
 header.header-main {
-    height: 100vh;
+    height: 90vh;
     background: linear-gradient(to top right, #264a9d, #0d1336);
+    background-size: cover;
+    background-repeat: no-repeat;
 
 }
 
@@ -160,11 +164,11 @@ div.header-hero-img img.dots {
     /* z-index: 2; */
 }
 
+
+/* First Section */
 section.workflow {
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
-    height: 70rem
+    height: 70rem;
+    overflow-x: hidden;
 }
 
 div.background-text--gradient h1 {
@@ -179,13 +183,12 @@ div.background-text--gradient h1 {
 
 div.workflow-content {
     display: flex;
-    /* flex-direction: column; */
     justify-content: center;
     margin-top: -18rem;
 }
 
 div.background-gradient {
-    width: 65rem;
+    width: 60rem;
     height: 35rem;
     background: linear-gradient(to right, #264a9d, #0d1336);
     position: relative;
@@ -193,7 +196,6 @@ div.background-gradient {
 }
 
 div.workflow-img1 {
-    width: 20rem;
     position: absolute;
     top: 15rem;
     left: -12rem;
@@ -203,7 +205,7 @@ div.workflow-img1 {
 div.workflow-img2 {
     position: absolute;
     top: 10rem;
-    right: 48rem;
+    right: 42rem;
 }
 
 div.workflow-img2 img {
@@ -212,25 +214,34 @@ div.workflow-img2 img {
 
 div.workflow-txt {
     color: #fff;
+    line-height: 1.5;
     position: absolute;
-    top: 7rem;
-    left: 15rem;
+    top: 8rem;
+    left: 22.4rem;
+    width: 100%;
 }
 
 div.workflow-txt h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 800;
 }
 
 div.workflow-txt h2 {
-    font-size: 5rem;
+    font-size: 3.6rem;
     font-weight: 400;
+}
+
+div.workflow-txt h2 span img {
+    width: .8rem;
+    margin-left: -.8rem;
 }
 
 div.workflow-txt p {
     font-size: 1.5rem;
     font-weight: 400;
-    color: var(--line-color)
+    color: var(--line-color);
+    width: 60%;
+    margin: 0 0 0 2rem;
 }
 
 
@@ -268,6 +279,74 @@ div.workflow-txt p {
     }
 }
 
+@media screen and (max-width: 600px) {
+    div.workflow-content {
+        margin-top: -10rem;
+    }
+
+    div.background-gradient {
+        width: 40rem;
+        height: 25rem;
+    }
+
+    div.workflow-img1 {
+        top: 0;
+        left: 12rem;
+    }
+
+    div.workflow-img2 {
+        top: -16rem;
+        left: 15rem;
+    }
+
+
+    div.workflow-txt {
+        top: 20rem;
+        left: 9rem;
+    }
+
+    div.workflow-txt h1 {
+        font-size: 3rem;
+    }
+
+    div.workflow-txt h2 {
+        font-size: 2.5rem;
+    }
+
+    div.workflow-txt h2 span img {
+        margin-left: -.5rem;
+    }
+
+    div.workflow-txt p {
+        font-size: 1.1rem;
+    }
+
+}
+
+
+@media screen and (max-width: 538px) {
+    div.header-hero-content {
+        flex-direction: column;
+    }
+
+    .header-hero-text {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    div.header-hero-img {
+        width: 35rem;
+        align-self: center;
+        margin-top: 2rem;
+    }
+
+    header.header-main {
+        height: 82rem
+    }
+}
+
+
+
 @media screen and (max-width: 425px) {
     nav.header-nav-main {
         padding: 0 1rem;
@@ -278,17 +357,69 @@ div.workflow-txt p {
     }
 
     .nav-menu {
-        font-size: 1.4rem;
-        border-bottom: 2px solid #5cddff;
+        font-size: 1.2rem;
     }
 
     nav.header-nav-main button {
-        padding: 2rem 1rem .5rem 1rem;
-        font-size: 1.5rem;
+        padding: 3rem 1rem .5rem 1rem;
+        font-size: 1rem;
     }
 
     div.header-hero-content {
         padding: 7rem 3rem;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+
+    div.workflow-img2 img {
+        width: 22rem;
+    }
+
+    div.workflow-img1 {
+        top: 0;
+        left: 2rem;
+    }
+
+    div.workflow-img2 {
+        top: -12rem;
+        left: 8rem;
+    }
+
+
+    div.workflow-txt {
+        top: 21rem;
+        left: 3rem;
+    }
+
+
+
+}
+
+@media screen and (max-width: 361px) {
+    div.header-hero-content {
+        padding: 6rem 1rem;
+    }
+
+    .header-hero-text h1 {
+        font-size: 4rem;
+    }
+
+    div.header-hero-img {
+        width: 32rem;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    div.workflow-txt h1 {
+        font-size: 2.5rem;
+    }
+
+    div.workflow-txt {
+        top: 21rem;
+        left: 1.4rem;
     }
 
 }
