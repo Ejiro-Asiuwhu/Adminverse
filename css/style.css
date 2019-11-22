@@ -284,6 +284,7 @@ div.key-app-content {
 
 .app-img h2 {
     text-transform: uppercase;
+    font-size: 3rem;
 }
 
 .app-img {
@@ -324,6 +325,8 @@ section#about-section {
     width: 100%;
     background: linear-gradient(to right, #264a9d, #0d1336);
     position: relative;
+    color: #fff;
+    height: 50rem;
 }
 
 div.about-dot-img img {
@@ -333,8 +336,85 @@ div.about-dot-img img {
     left: 100rem;
 }
 
+div.about-main {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 14rem 26rem;
+}
+
+div.about-main h1,
+h2 {
+    color: #fff;
+    font-size: 4.6rem;
+    font-weight: 800;
+    line-height: 1.5;
+}
 
 
+div#about-main-text {
+    margin-left: -18rem;
+}
+
+
+div#about-main-text h2 {
+    font-weight: 400;
+}
+
+div#about-main-text h2 span {
+    margin-left: -.7rem;
+}
+
+div#about-main-text p {
+    font-size: 1.5rem;
+    color: var(--line-color);
+    font-weight: 400;
+    margin-left: 2rem;
+    line-height: 1.5;
+}
+
+div.contol-bkg {
+    width: 11rem;
+    height: 21rem;
+    background-color: #13204f;
+    position: relative;
+    margin-left: -8rem;
+}
+
+
+div.about-control {
+    align-self: flex-end;
+}
+
+
+div.about-control ul,
+li:first-of-type {
+    color: #fff;
+}
+
+div.about-control ul {
+    list-style-type: none;
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: var(--line-color);
+    line-height: 3.3;
+    position: absolute;
+    top: -3.5rem;
+    left: 2rem;
+    
+
+}
+
+
+div.about-chart {
+    align-self: flex-end;
+    margin-right: -18rem;
+    margin-bottom: -12rem;
+}
+
+div.about-chart img {
+    width: 21rem
+}
 
 
 
