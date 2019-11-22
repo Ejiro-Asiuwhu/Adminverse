@@ -24,6 +24,10 @@
     box-sizing: inherit;
 }
 
+*::selection {
+    color: #ff55b1;
+}
+
 html {
     box-sizing: border-box;
     font-size: 62.5%;
@@ -91,7 +95,6 @@ header.header-main {
 div.header-hero-content {
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
     padding: 9rem 9rem;
 }
 
@@ -423,8 +426,30 @@ div.about-chart img {
 }
 
 
+/* Price Section */
 
+section.pricing-plan h1 {
+    font-weight: 800;
+    font-size: 5rem;
+}
 
+section.pricing-plan h2 {
+    font-weight: 400;
+    font-size: 5rem;
+}
+
+section.pricing-plan h2 img {
+    margin-left: -1.2rem;
+    width: 1rem;
+}
+
+section.pricing-plan p {
+    font-size: 1.5rem;
+    color: var(--line-color);
+    font-weight: 400;
+    margin-left: 1.5rem;
+    line-height: 1.5;
+}
 
 
 
