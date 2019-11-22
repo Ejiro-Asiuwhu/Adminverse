@@ -560,6 +560,7 @@ label {
 form {
     background-color: #0d1336;
     padding: 2rem 5rem;
+    height: 100%;
 }
 
 section.form input {
@@ -573,7 +574,8 @@ section.form input {
 
 #company,
 #email,
-#name, textarea {
+#name,
+textarea {
     outline: none;
     background: none;
     display: block;
@@ -586,16 +588,102 @@ section.form input {
 
 }
 
- textarea {
-     margin-bottom: 2rem;
- }
+textarea {
+    margin-bottom: 2rem;
+}
 
 input::placeholder {
     color: #1e387c;
     font-size: 2rem;
 }
 
+.contact-text h1 {
+    font-size: 5rem;
+    font-weight: 800;
+    text-transform: capitalize;
+}
 
+.contact-text h1:nth-of-type(2) {
+    font-weight: 400;
+}
+
+div.contact-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+section.form a {
+    color: var(--line-color);
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #13204f;
+    height: 40rem;
+    overflow: hidden;
+}
+
+.footer-left img {
+    width: 15rem;
+    display: block;
+    margin-bottom: 2rem;
+}
+
+.footer-left {
+    padding-left: 12rem;
+    padding-top: 7rem;
+    color: var(--line-color);
+}
+
+.footer-middle img {
+    width: 10rem;
+    font-weight: 400;
+    margin-right: 4rem;
+}
+
+.footer-middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: -7rem;
+}
+
+div.partners-logo {
+    display: flex;
+}
+
+.footer-middle h1 {
+    font-weight: 400;
+    margin-bottom: 3rem;
+}
+
+.footer-middle h1 img {
+    width: 1rem;
+    margin-left: -.7rem;
+}
+
+
+.footer-right img {
+    width: 30rem;
+    display: block;
+    align-self: flex-end;
+    margin-bottom: -8rem;
+}
+
+.footer-right {
+    align-self: flex-end;
+}
+
+small {
+    font-weight: 400;
+}
 
 
 
@@ -625,6 +713,14 @@ input::placeholder {
 
     div.about-main {
         padding: 4rem 26rem;
+    }
+
+    .footer-left {
+        padding-left: 8rem;
+    }
+
+    .footer-middle {
+        margin-right: -8rem;
     }
 
 }
@@ -660,6 +756,18 @@ input::placeholder {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .footer-right img {
+        width: 20rem;
+    }
+
+    .footer-middle {
+        margin-right: -3rem;
+    }
+
+    .footer-left {
+        padding-left: 4rem;
     }
 }
 
@@ -796,6 +904,35 @@ input::placeholder {
     section.pricing-plan {
         padding: 2rem 4rem;
     }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .footer-left {
+        padding-left: 0;
+        padding-top: 2rem;
+
+    }
+
+    .footer-right img {
+        width: 15rem;
+    }
+    .footer-middle h1 {
+        margin-bottom: 1rem;
+    }
+
+    .footer-left img {
+        width: 15rem;
+        display: block;
+        margin-bottom: 2rem;
+    }
+
+    .footer-left {
+        padding-bottom: 4rem;
+    }
 }
 
 
@@ -824,7 +961,10 @@ input::placeholder {
     section.pricing-plan {
         padding: 2rem 2rem;
     }
-
+.footer-left img {
+    width: 18rem;
+    margin-bottom: 0;
+}
 }
 
 
@@ -865,5 +1005,13 @@ input::placeholder {
     div.pricing-plan-heading {
         line-height: 1.41;
         letter-spacing: 0;
+    }
+    footer {
+        padding: 3rem 3rem;
+    }
+
+    .footer-middle h1 {
+        margin-bottom: 0;
+        font-size: 3.6rem;
     }
 }
