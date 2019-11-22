@@ -216,27 +216,24 @@
       <section class="form">
         <form action="script.js" method="get">
           <div class="name-field">
-            <label for="name">Name</label>
-            <input type="text" id="name" />
+            <input type="text" id="name" placeholder="Name"  required/>
           </div>
           <div class="company-field">
-            <label for="company">Company Name</label>
-            <input type="text" id="company" />
+            <input type="text" id="company" placeholder="Company Name" required />
           </div>
           <div class="email-field">
-            <label for="email">Email</label>
-            <input type="text" id="email" />
+            <input type="email" id="email" placeholder="Email" required />
           </div>
           <div class="subject-field">
+            <label for="subject">Subject</label>
             <textarea
               name="subject"
               id="subject"
               cols="30"
-              rows="10"
+              rows="7" required
             ></textarea>
-            <label for="subject">Subject</label>
           </div>
-          <button class="btn-card btn-contact">Submit</button>
+          <button type="submit" class="btn-card btn-contact">Submit</button>
         </form>
         <div class="contact-text">
           <h1>Let's get you started</h1>

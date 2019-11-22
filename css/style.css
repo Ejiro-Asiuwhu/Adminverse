@@ -543,17 +543,57 @@ img#adj {
 }
 
 
-/* COntact */
+/* Contact */
 
 section.form {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 18rem 12rem;
 }
 
 label {
-    background: none;
+    color: #1e387c;
+    font-size: 2rem;
+    font-weight: 400;
 }
 
+form {
+    background-color: #0d1336;
+    padding: 2rem 5rem;
+}
+
+section.form input {
+    padding: 1rem 26rem 1rem 0;
+}
+
+#company,
+#email {
+    margin-top: 1.2rem;
+}
+
+#company,
+#email,
+#name, textarea {
+    outline: none;
+    background: none;
+    display: block;
+    width: 100%;
+    border: 0;
+    color: #1e387c;
+    font-size: 2rem;
+    font-weight: 400;
+    border-bottom: 1px solid var(--line-color);
+
+}
+
+ textarea {
+     margin-bottom: 2rem;
+ }
+
+input::placeholder {
+    color: #1e387c;
+    font-size: 2rem;
+}
 
 
 
