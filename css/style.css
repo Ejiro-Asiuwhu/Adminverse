@@ -244,11 +244,100 @@ div.workflow-txt p {
     margin: 0 0 0 2rem;
 }
 
+/* Applications */
 
 
 
+div.key-app-heading {
+    color: #fff;
+    font-size: 2.2rem;
+    text-align: center;
+    background: linear-gradient(to right, #264a9d, #0d1336);
+
+}
+
+div.key-app-heading span {
+    font-weight: 400;
+
+}
+
+div.key-app-heading span img {
+    margin-left: 1rem;
+    width: 1rem;
+}
 
 
+div.key-app-content {
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin: 0 auto;
+    justify-items: center;
+    max-width: 53%; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 22rem;
+
+}
+
+.app-img h2 {
+    text-transform: uppercase;
+}
+
+.app-img {
+    position: relative;
+}
+
+.app-img img {
+    opacity: 0.6;
+   
+}
+
+.app-img h2 {
+    position: absolute;
+    top: 16.7rem;
+    left: 2rem;
+}
+
+div.app-img1 {
+    /* grid-column: 1/2;
+    justify-self: center; */
+}
+
+div.app-img2 {
+    /* grid-column: 2/2;
+    justify-self: start;
+    margin-right: auto; */
+
+}
+
+div.app-img3 {
+    /* grid-column: 3/4;
+    justify-self: center; */
+
+}
+
+div.app-img4 {
+    /* justify-self: center;
+    margin-top: -1.3rem; */
+    margin-top: -1.3rem;
+
+}
+
+div.app-img5 {
+    /* justify-self: start;
+    margin-top: -1.3rem; */
+    margin-top: -1.3rem;
+}
+
+div.app-img6 {
+    /* justify-self: start;
+    margin-top: -1.3rem; */
+    margin-top: -1.3rem;
+    visibility: hidden;
+}
 
 
 
@@ -259,6 +348,25 @@ div.workflow-txt p {
 
 
 /* Media Queries */
+
+@media screen and (max-width: 1024px) {
+    nav.header-nav-main {
+        padding: 0 3rem;
+    }
+
+    div.header-hero-content {
+        padding: 7rem 3rem;
+    }
+
+
+    .header-hero-text {
+        margin-right: 4rem;
+    }
+
+    .header-hero-text button {
+        font-size: 1rem;
+    }
+}
 
 @media screen and (max-width: 768px) {
     nav.header-nav-main {
