@@ -152,34 +152,38 @@
 
       <!-- Price Section -->
       <section class="pricing-plan">
-        <h1>Simple</h1>
-        <h2>Pricing Plans <img src="./Assets/cursor.png" alt="" /></h2>
-        <p>
-          Your company's admin could be 100% more flexible with every department
-          under one intelligent structure.
-        </p>
+        <div class="pricing-plan-heading">
+          <h1>Simple</h1>
+          <h2>Pricing Plans <img src="./Assets/cursor.png" alt="" /></h2>
+          <p>
+            Your company's admin could be 100% more flexible with every
+            department under one intelligent structure.
+          </p>
+        </div>
         <div class="price-card-container">
-          <div class="card-starter">
-            <div class="starter-card--top">
+          <div class="card card-starter">
+            <div class="border starter-card--top">
               <h3>Starter <img src="./Assets/cursor.png" alt="" /></h3>
               <h3>Free</h3>
               <button class="btn-card">Place Order</button>
             </div>
-            <div class="starter-card--bottom">
+            <div class="border starter-card--bottom">
               <ul>
                 <li>Staff Records</li>
-                <li>Payment and Disbursment</li>
+                <li>Payroll & Disbursment</li>
                 <li>Mobile App</li>
               </ul>
             </div>
           </div>
-          <div class="card-company">
-            <div class="company-card--top">
-              <h3>N146,000<img src="./Assets/cursor.png" alt="" /></h3>
-              <h3>Free</h3>
+          <div class="card card-company">
+            <div class="border company-card--top">
+              <h3>
+                Comapny Basic<img id="adj" src="./Assets/cursor.png" alt="" />
+              </h3>
+              <h3>N146,000</h3>
               <button class="btn-card">Place Order</button>
             </div>
-            <div class="company-card--bottom">
+            <div class="border company-card--bottom">
               <ul>
                 <li>20 persons / team</li>
                 <li>Payroll & disbursement</li>
@@ -189,13 +193,13 @@
               </ul>
             </div>
           </div>
-          <div class="card-advanced">
-            <div class="advanced-card--top">
+          <div class="card card-advanced">
+            <div class="border advanced-card--top">
               <h3>Large Advanced <img src="./Assets/cursor.png" alt="" /></h3>
               <h3>N558,999</h3>
               <button class="btn-card">Place Order</button>
             </div>
-            <div class="starter-card--bottom">
+            <div class="border large-card--bottom">
               <ul>
                 <li>Unlimited team</li>
                 <li>Payroll & disbursement</li>
@@ -203,6 +207,59 @@
                 <li>Contract staffing</li>
                 <li>Mobile app</li>
               </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="form">
+        <form action="script.js" method="get">
+          <div class="name-field">
+            <label for="name">Name</label>
+            <input type="text" id="name" />
+          </div>
+          <div class="company-field">
+            <label for="company">Company Name</label>
+            <input type="text" id="company" />
+          </div>
+          <div class="email-field">
+            <label for="email">Email</label>
+            <input type="text" id="email" />
+          </div>
+          <div class="subject-field">
+            <textarea
+              name="subject"
+              id="subject"
+              cols="30"
+              rows="10"
+            ></textarea>
+            <label for="subject">Subject</label>
+          </div>
+          <button class="btn-card btn-contact">Submit</button>
+        </form>
+        <div class="contact-text">
+          <h1>Let's get you started</h1>
+          <h1>Contact us <img src="./Assets/cursor.png" alt="" /></h1>
+          <div class="contact-address">
+            <div class="call-email-link">
+              <div class="email-link">
+                <a mailto:href="hello@adminverse.com">hello@adminverse.com</a>
+              </div>
+              <div class="call-link">
+                <a mailto:href="hello@adminverse.com">+234 81 6849 3657</a>
+              </div>
+            </div>
+            <div class="social-link">
+              <div class="fb">
+                <a href="http://facebook.com/adminverse">Facebook</a>
+              </div>
+              <div class="lin">
+                <a href="http://linkedin.com/company/adminverse">LinkedIn</a>
+              </div>
+              <div class="twit">
+                <a href="http://twitter.com/adminverse">Twitter</a>
+              </div>
             </div>
           </div>
         </div>

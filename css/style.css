@@ -428,14 +428,25 @@ div.about-chart img {
 
 /* Price Section */
 
+section.pricing-plan {
+    padding: 4rem 12rem;
+    background: linear-gradient(to right top, #264a9d, #0d1336);
+
+}
+
+div.pricing-plan-heading {
+    line-height: 1.2;
+    letter-spacing: 2px;
+}
+
 section.pricing-plan h1 {
     font-weight: 800;
-    font-size: 5rem;
+    font-size: 4.3rem;
 }
 
 section.pricing-plan h2 {
     font-weight: 400;
-    font-size: 5rem;
+    font-size: 4.5rem;
 }
 
 section.pricing-plan h2 img {
@@ -450,6 +461,102 @@ section.pricing-plan p {
     margin-left: 1.5rem;
     line-height: 1.5;
 }
+
+div.price-card-container {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.card {
+    background: #13204f;
+    width: 32rem;
+    height: 100%;
+    margin-top: 2rem
+}
+
+
+div.border {
+    border: 1px solid var(--line-color);
+    padding-bottom: 1rem;
+}
+
+
+div.company-card--bottom,
+div.starter-card--bottom,
+div.large-card--bottom {
+    border-top: none;
+}
+
+div.company-card--top:hover,
+div.starter-card--top:hover,
+div.advanced-card--top:hover {
+    background: linear-gradient(to right, #FFB07E, #ff55b1);
+}
+
+
+div.card ul {
+    list-style: none;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-size: 1.6rem;
+    line-height: 3;
+    padding: 2rem;
+}
+
+.card h3 {
+    font-weight: 400;
+    font-size: 3.8rem;
+}
+
+.card h3:first-of-type {
+    font-size: 3rem;
+}
+
+.card h3:first-of-type img {
+    width: 1rem;
+    margin-left: -0.5rem;
+}
+
+img#adj {
+    margin-left: 0.35rem;
+}
+
+.btn-card {
+    outline: none;
+    border: 1px solid var(--line-color);
+    border-radius: 13rem;
+    padding: 1.3rem 6rem;
+    background-color: #1e387c;
+    color: var(--line-color);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all ease-in-out .4s;
+}
+
+
+.btn-card:hover {
+    transform: scale(1.1);
+}
+
+
+/* COntact */
+
+section.form {
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    background: none;
+}
+
+
+
+
 
 
 
@@ -507,6 +614,12 @@ section.pricing-plan p {
     div.key-app-content {
         padding: 5rem 10rem;
 
+    }
+
+    div.price-card-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -639,7 +752,13 @@ section.pricing-plan p {
     div.about-control {
         margin-top: 5rem;
     }
+
+    section.pricing-plan {
+        padding: 2rem 4rem;
+    }
 }
+
+
 
 @media screen and (max-width: 375px) {
 
@@ -661,7 +780,14 @@ section.pricing-plan p {
         top: 21rem;
         left: 3rem;
     }
+
+    section.pricing-plan {
+        padding: 2rem 2rem;
+    }
+
 }
+
+
 
 @media screen and (max-width: 361px) {
     div.header-hero-content {
@@ -688,4 +814,16 @@ section.pricing-plan p {
         left: 1.4rem;
     }
 
+    .card {
+        width: 29rem;
+    }
+
+    section.pricing-plan {
+        padding: 1rem 1rem;
+    }
+
+    div.pricing-plan-heading {
+        line-height: 1.41;
+        letter-spacing: 0;
+    }
 }
