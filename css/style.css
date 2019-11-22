@@ -323,14 +323,14 @@ div.app-img6 {
 section#about-section {
     width: 100%;
     background: linear-gradient(to right, #264a9d, #0d1336);
+    position: relative;
 }
 
 div.about-dot-img img {
-    width: 17rem;
-}
-
-div.about-small-dot {
-    
+    width: 22rem;
+    position: absolute;
+    top: -8rem;
+    left: 100rem;
 }
 
 
