@@ -41,6 +41,7 @@ body {
     line-height: 2;
     color: #fff;
     overflow-x: hidden;
+    cursor: url('../Assets/cursor.png');
 }
 
 /* Navigation */
@@ -63,7 +64,8 @@ div.header-logo img {
 
 .nav-menu {
     font-size: 1.4rem;
-    border-bottom: 2px solid #5cddff;
+    border-bottom: 1px solid #5cddff;
+    padding: .2rem;
 }
 
 div.btn nav-btn {
@@ -71,7 +73,6 @@ div.btn nav-btn {
     justify-content: flex-end;
 }
 
-/* Header Hero */
 nav.header-nav-main button {
     outline: 0;
     border: none;
@@ -84,8 +85,10 @@ nav.header-nav-main button {
     margin-bottom: 2.3rem;
 }
 
+
+/* Header Hero */
 header.header-main {
-    height: 90vh;
+    height: 100vh;
     background: linear-gradient(to top right, #264a9d, #0d1336);
     background-size: cover;
     background-repeat: no-repeat;
@@ -95,7 +98,7 @@ header.header-main {
 div.header-hero-content {
     display: flex;
     justify-content: space-between;
-    padding: 9rem 9rem;
+    padding: 16rem 13rem;
 }
 
 
@@ -156,8 +159,24 @@ div.header-hero-img img {
 }
 
 div.header-hero-img {
-    position: relative;
     width: 40%;
+}
+
+div.hero-main {
+    position: relative;
+    z-index: 3;
+
+
+}
+
+div.hero-main {
+    z-index: 3;
+
+
+}
+
+div.hero-dot {
+    z-index: 1;
 }
 
 div.header-hero-img img.dots {
@@ -165,8 +184,40 @@ div.header-hero-img img.dots {
     position: absolute;
     top: 3.6rem;
     left: -4rem;
-    /* z-index: 2; */
+    z-index: -1;
 }
+
+
+.scroll-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -16rem;
+}
+
+div.scroll-icon {
+    width: 2rem;
+    height: 4.2rem;
+    border: 1.4px solid #fff;
+    border-radius: 8rem;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+div.scroll-line {
+    position: absolute;
+    width: 1rem;
+    height: 2.8rem;
+    border-right: 2px solid #fff;
+    top: .68rem
+}
+
+div.scroll-txt {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
 
 
 /* First Section */
@@ -252,14 +303,13 @@ div.workflow-txt p {
 
 section#key-app {
     position: relative;
-
 }
 
 div.key-app-heading {
     color: #fff;
     font-size: 2.2rem;
     text-align: center;
-    background: linear-gradient(to right, #264a9d, #0d1336);
+    background: linear-gradient(to right, #264a9d, #080f33);
 
 }
 
@@ -337,10 +387,9 @@ div.about-dot-img {
 section#about-section {
     width: 100%;
     background: linear-gradient(to right, #264a9d, #0d1336);
-    /* position: relative; */
     color: #fff;
     overflow-x: hidden;
-    height: 100%;
+    padding-bottom: 10rem;
 }
 
 
@@ -380,6 +429,10 @@ div#about-main-text p {
     font-weight: 400;
     margin-left: 2rem;
     line-height: 1.5;
+}
+
+div.about-p {
+    width: 48rem;
 }
 
 div.contol-bkg {
@@ -494,6 +547,7 @@ div.company-card--top:hover,
 div.starter-card--top:hover,
 div.advanced-card--top:hover {
     background: linear-gradient(to right, #FFB07E, #ff55b1);
+    cursor: pointer;
 }
 
 
@@ -561,6 +615,7 @@ form {
     background-color: #0d1336;
     padding: 2rem 5rem;
     height: 100%;
+    margin-right: 5rem;
 }
 
 section.form input {
@@ -598,19 +653,30 @@ input::placeholder {
 }
 
 .contact-text h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 800;
     text-transform: capitalize;
 }
 
-.contact-text h1:nth-of-type(2) {
+.contact-text h1:nth-child(2) {
     font-weight: 400;
+}
+
+.contact-text h1:nth-child(2) img {
+    width: 1.2rem;
+    margin-left: -.6rem;
+}
+
+div.contact-h1 h1 {
+    display: inline-block;
+    width: 50rem;
 }
 
 div.contact-text {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-top: -12rem;
 }
 
 section.form a {
@@ -618,6 +684,27 @@ section.form a {
     font-weight: 400;
     font-size: 1.6rem;
 }
+
+div.social-link {
+    margin: 5rem 0;
+}
+
+section.form small {
+    color: var(--line-color)
+}
+
+.contact-address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-text h1:nth-of-type(2) img {
+    width: 1rem;
+    margin-left: -1rem;
+}
+
+
 
 /* Footer */
 
@@ -703,9 +790,6 @@ small {
         font-size: 1.4rem;
     }
 
-    div#about-main-text {
-        margin-left: -22rem;
-    }
 
     div.contol-bkg {
         margin-left: 0;
@@ -723,6 +807,18 @@ small {
         margin-right: -8rem;
     }
 
+    section.form {
+        flex-direction: column;
+    }
+
+    div.contact-text {
+        margin-top: 5rem;
+        align-self: center;
+    }
+
+    form {
+        margin-right: 0;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -741,6 +837,10 @@ small {
 
     .header-hero-text button {
         font-size: 1rem;
+    }
+
+    .scroll-container {
+        margin-top: -8rem;
     }
 
     div.app-img5 {
@@ -768,6 +868,22 @@ small {
 
     .footer-left {
         padding-left: 4rem;
+    }
+
+    #company,
+    #email,
+    #name,
+    textarea {
+        width: 100%;
+    }
+
+    section.form input {
+        padding: 1rem 15rem 1rem 0;
+    }
+
+    section.form {
+
+        padding: 6rem 6rem;
     }
 }
 
@@ -816,6 +932,15 @@ small {
     div.app-img6 {
         display: none;
     }
+
+    div.contact-h1 h1 {
+        width: auto;
+    }
+
+    div.about-p {
+        width: 40rem;
+    }
+
 }
 
 
@@ -865,6 +990,10 @@ small {
         padding: 7rem 3rem;
     }
 
+    .scroll-container {
+        display: none
+    }
+
     div.key-app-content {
         padding: 4rem 4rem;
 
@@ -880,6 +1009,15 @@ small {
         justify-content: space-between;
         align-items: baseline;
         padding: 4rem 26rem;
+    }
+
+    div#about-main-text {
+        margin-left: -25rem;
+        padding-right: 1rem;
+    }
+
+    div.about-p {
+        width: 30rem;
     }
 
     div#about-main-text h2 span:first-of-type img {
@@ -920,6 +1058,7 @@ small {
     .footer-right img {
         width: 15rem;
     }
+
     .footer-middle h1 {
         margin-bottom: 1rem;
     }
@@ -932,6 +1071,10 @@ small {
 
     .footer-left {
         padding-bottom: 4rem;
+    }
+
+    section.form {
+        padding: 2rem 2rem;
     }
 }
 
@@ -961,10 +1104,11 @@ small {
     section.pricing-plan {
         padding: 2rem 2rem;
     }
-.footer-left img {
-    width: 18rem;
-    margin-bottom: 0;
-}
+
+    .footer-left img {
+        width: 18rem;
+        margin-bottom: 0;
+    }
 }
 
 
@@ -1006,12 +1150,17 @@ small {
         line-height: 1.41;
         letter-spacing: 0;
     }
-    footer {
-        padding: 3rem 3rem;
-    }
 
-    .footer-middle h1 {
-        margin-bottom: 0;
-        font-size: 3.6rem;
+    section.form {
+        padding: 4px 4px;
     }
+}
+
+footer {
+    padding: 3rem 3rem;
+}
+
+.footer-middle h1 {
+    margin-bottom: 0;
+    font-size: 3.6rem;
 }
