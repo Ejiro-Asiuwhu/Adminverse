@@ -1109,6 +1109,10 @@ small {
         width: 18rem;
         margin-bottom: 0;
     }
+
+    section.pricing-plan h2 img {
+        display: none;
+    }
 }
 
 
