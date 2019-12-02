@@ -1,2 +1,4 @@
+<<<<<<< HEAD
 # Adminverse
-Process Management Platform For Smarter Brands
+A Clone of a Process Management Platform For Smarter Brands
+=======
